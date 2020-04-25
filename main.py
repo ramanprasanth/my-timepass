@@ -3,6 +3,7 @@ import webbrowser, logging
 
 
 app = Flask(__name__)
+logging.basicConfig(level=logging.WARNING)
 
 @app.route('/', methods=["GET"])
 def home():
